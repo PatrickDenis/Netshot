@@ -339,6 +339,9 @@ function snapshot(cli, device, config, debug) {
 		else if (system.match(/.*CISCO39\d\d.*/)) {
 			device.set("family", "Cisco ISR-G2 3900");
 		}
+		else if (system.match(/cisco ISR43\d\d/)) {
+			device.set("family", "Cisco ISR 4300");
+		}
 		else if (system.match(/cisco ISR44\d\d/)) {
 			device.set("family", "Cisco ISR 4400");
 		}
